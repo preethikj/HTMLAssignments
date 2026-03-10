@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Event Registration</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+    *{
+       box-sizing: border-box;
+     }
+
+     body{
+       margin:0;
+       padding:10px;
+    }
+
+    img{
+        max-width:100%;
+        height:auto;
+    }
+
+    input, button{
+                 width:100%;
+                 margin-top:10px;
+                 padding:10px;
+    }
+</style>
+
+</head>
+
+<body class="bg-gray-100">
+
+<!-- Header -->
+<div class="text-center mt-10">
+    <h1 class="text-4xl font-bold">Frontend Bootcamp</h1>
+    <p class="mt-2 text-gray-600">Number of available seats: 23</p>
+</div>
+
+<!-- Main Container -->
+<div class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg p-8 mt-10">
+
+    <div class="flex flex-col md:flex-row gap-12 items-start">
+
+        <!-- Image Section -->
+        <div class="w-full md:w-1/3 flex flex-col items-center justify-center bg-gray-50 rounded-lg p-6 border border-gray-200">
+
+            <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97"
+             class="w-full h-auto object-cover rounded-lg shadow-md hover:shadow-lg transition"
+             alt="Frontend Bootcamp">
+
+        </div>
+
+        <!-- Form Section -->
+        <div class="w-full md:w-2/3">
+
+            <div class="bg-gray-50 p-6 border rounded-lg border-gray-200">
+
+                <h2 class="text-xl font-semibold mb-4">
+                    Register for the Event
+                </h2>
+
+                <form class="space-y-4">
+
+                    <input type="text" placeholder="Name"
+                    class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+
+                    <input type="email" placeholder="Email"
+                    class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+
+                    <input type="tel" placeholder="Phone Number"
+                    class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+
+                    <select class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" required>
+                        <option>Number of seats</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                    </select>
+
+                    <input type="text" placeholder="Name of Attendee"
+                    class="w-full border border-gray-300 p-3 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400">
+
+                    <!-- Buttons -->
+                    <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                        <button class="bg-blue-500 hover:bg-blue-700 text-white px-6 py-2 rounded-lg transition">Submit</button>
+                        <button class="bg-gray-400 hover:bg-gray-600 text-white px-6 py-2 rounded-lg transition">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
